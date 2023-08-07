@@ -1,6 +1,6 @@
 <h1 align="center">
     <br>
-    <img src="img/Khaliria.png" alt="Khal'iria" height="125" width="150">
+    <img src="img/Khaliria.png" alt="Khal'iria" width="50%">
     <br><br>
 </h1>
 
@@ -10,7 +10,7 @@
     <a href="https://discord.gg/N5t9eSeY8U">
     <img src="https://img.shields.io/discord/829042103295410197?color=%237289DA&label=Khal'iria&logo=discord&logoColor=white" alt="Discord"></a>
     <a href="https://www.repostatus.org/#wip">
-    <img src="https://www.repostatus.org/badges/latest/wip.svglabel=Status" alt="Project Status: WIP"/></a>
+    <img src="https://www.repostatus.org/badges/latest/wip.svg" alt="Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public." /></a>  
 </p>
 
 ## :dizzy: **Informações**
