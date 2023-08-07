@@ -4,7 +4,7 @@
     <br><br>
 </h1>
 
-<p align="center">Um site com finalidade de apresentar o conteúdo feito para o servidor Khal'iria</p>
+<p align="center">Um site com finalidade de apresentar o conteúdo feito para o servidor Khal'iria.</p>
 
 <p align="center">
     <a href="https://discord.gg/N5t9eSeY8U">
@@ -17,7 +17,7 @@
 
 Khal'iria é o nome de um multiverso criado dentro do jogo Conan Exiles, em um servidor privado.
 
-Sua história é rica em fantasia e magia, dentro de um cenario medieval, você pode conferir em nosso [site](https://khaliriarp.github.io/kha)
+Sua história é rica em fantasia e magia, dentro de um cenario medieval, você pode conferir em nosso [site](https://khaliriarp.github.io/kha).
 
 Nosso objetivo é trazer entretenimento para os fãs de Roleplay e RPG.
 
