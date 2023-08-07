@@ -2,21 +2,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Aladin&family=Courgette&display=swap');
 
-h1{
+h1 {
     font-family: 'Courgette', cursive;
     color: #fff;
     font-size: 60px;
     text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
 }
 
-h2{
+h2 {
     font-family: 'Aladin', cursive;
     color: #fff;
     font-size: 25px;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
 }
 
-h3{
+h3 {
     font-family: 'Courgette', cursive;
     color: #fff;
     font-size: 40px;
@@ -25,9 +25,13 @@ h3{
 
 /* Corpo */
 
-*{margin: 0; padding: 0; box-sizing: border-box;}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-.body{
+.body {
     margin: 0;
     padding: 0;
     background-color: #09131f;
@@ -36,7 +40,7 @@ h3{
 
 /* Header */
 
-header{
+header  {
     position: absolute;
     top: 1.5%;
     left: 1%;
@@ -49,12 +53,12 @@ header{
     border-radius: 10px;
 }
 
-header .sticky{
+header .container {
     padding: 10px 100px;
     background-color: rgba(36, 36, 36, 0);
 }
 
-header .logo{
+header .logo {
     height: 3.5em;
     width: 100%;
     background-image: url(../img/Khaliria.png);
@@ -63,7 +67,7 @@ header .logo{
     cursor: pointer;
 }
 
-header ul{
+.container ul {
     position: relative;
     display: flex;
     justify-content: center;
@@ -71,15 +75,16 @@ header ul{
     max-width: 1000px;
 }
 
-header ul li {
-    position: relative;
-    list-style: none;
-    padding: 40px;
-    text-align: center;
-    clip-path: ellipse(40% 20% at 50% 50%);
+.container{
+    display: flex;
 }
 
-header ul li a {
+.container li{
+    list-style: none;
+    margin-right: 2rem;
+}
+
+.container a {
     position: relative;
     margin: 0 15px;
     color: #fff;
@@ -90,20 +95,13 @@ header ul li a {
     text-decoration: none;
 }
 
-header ul li:hover {
-    background-color: #362a7a;
-    transition: 0.8s;
-    filter: brightness(140%);
-}
-
-header.sticky ul li a{
-    color: #fff;
-    text-decoration: none;
+.container li:hover{
+    color: #02001a;
 }
 
 /* Banner */
 
-.banner1{
+.banner1 {
     width: 100%;
     height: 100%;
     margin-right: -50px;
@@ -113,7 +111,7 @@ header.sticky ul li a{
     background-repeat: no-repeat;
 }
 
-.banner2{
+.banner2 {
     width: 100%;
     height: 1000px;
     margin-right: -50px;
@@ -123,12 +121,12 @@ header.sticky ul li a{
     background-repeat: no-repeat;
 }
 
-.content{
+.content {
     text-align: center;
     margin-top: -200px;
 }
 
-.banner img{
+.banner img {
     margin-top: 150px;
     max-width: 350px;
     width: 98%;
@@ -137,7 +135,7 @@ header.sticky ul li a{
 
 /* Main */
 
-.main{
+.main {
     width: 100%;
     height: 100%;
     /* background-color: #02001a; */
@@ -150,10 +148,10 @@ header.sticky ul li a{
 
 /* Rodape */
 
-.footer{
-	background-color: #02001a;
+.footer {
+    background-color: #02001a;
     width: 100%;
-	height: 9rem;
+    height: 9rem;
     float: left;
     text-align: center;
     justify-content: center;
@@ -163,9 +161,97 @@ header.sticky ul li a{
     font-size: 20px;
 }
 
-.social{
+.footer a{
+    color: #ffffff;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 2.8rem;
+    transition: 0.4s;
+}
+
+.footer a:hover{
+    color: #a329e9;
+}
+
+.footer p{
+    margin-top: 1rem;
+}
+
+.social {
     margin-top: 5px;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
+}
+
+.menu-lines {
+    position: absolute;
+    z-index: 999;
+    width: 35px;
+    height: 35px;
+    top: 16px;
+    right: 16px;
+    display: none;
+}
+
+.menu-lines span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    transition: all ease .2s;
+    display: none;
+}
+
+.menu-faketrigger {
+    position: absolute;
+    z-index: 1000;
+    width: 35px;
+    height: 35px;
+    opacity: 0;
+    top: 16px;
+    right: 16px;
+    display: none;
+}
+
+.menu-faketrigger:checked~.menu-lines span:nth-child(1) {
+    transform-origin: 0% 0%;
+    transform: rotate(45deg) scaleX(1.25);
+}
+
+.menu-faketrigger:checked~.menu-lines span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-faketrigger:checked~.menu-lines span:nth-child(3) {
+    transform-origin: 0% 100%;
+    transform: rotate(-45deg) scaleX(1.25);
+}
+
+@media (max-width: 980px) {
+    .menu-lines {
+        display: block;
+    }
+
+    .menu-lines span {
+        display: block;
+    }
+
+    .menu-faketrigger {
+        display: block;
+    }
+
+    .container{
+        display: none;
+    }
+
+    .container ul{
+        display: block;
+    }
+}
+
+.menu-faketrigger:checked~.container{
+    display: block;
 }
