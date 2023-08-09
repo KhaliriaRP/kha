@@ -13,16 +13,15 @@
 	left: 0;
 	top: 0;
 	width: 100%;
-	height: 100vh;
+	height: 60rem;
 	object-fit: cover;
 }
 
 /* Background */
 
 .container2 {
-	width: auto;
-	height: 1680px;
-	object-fit: cover;
+	width: 100%;
+	height: 110rem;
 }
 
 .box {
@@ -222,8 +221,8 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 	height: 100%;
 }
 
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
+/* O Anchor cobrirá todo o item por padrão */
+/* Para alguns efeitos, aparecerá como um botão */
 .grid figure figcaption>a {
 	z-index: 1000;
 	text-indent: 200%;
@@ -253,12 +252,12 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 }
 
 @media (max-width: 1680px) {
-	.grid{
+	.grid {
 		grid-template-columns: 30rem 30rem;
 		justify-content: space-evenly;
-	}	
+	}
 
-	.container2{
+	.container2 {
 		height: 160rem;
 	}
 
@@ -270,12 +269,12 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 		max-width: 90%;
 	}
 
-	.grid{
+	.grid {
 		grid-template-columns: 30rem;
 		justify-content: center;
 	}
 
-	.container2{
+	.container2 {
 		height: 270rem;
 	}
 
