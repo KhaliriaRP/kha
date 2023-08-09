@@ -265,17 +265,16 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 
 @media (max-width: 980px) {
 	.grid figure {
-		margin: 1rem 1.7rem;
 		max-width: 90%;
 	}
 
 	.grid {
-		grid-template-columns: 30rem;
+		grid-template-columns: 20rem;
 		justify-content: center;
 	}
 
 	.container2 {
-		height: 270rem;
+		height: 207rem;
 	}
 
 }
