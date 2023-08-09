@@ -1,48 +1,51 @@
 /* Video do Topo */
 
-.video{
-    width: 100%;
-    height: 60vh;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
+.video {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
 }
 
-.video video{
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 60vh;
-    object-fit: fill;
+.video video {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
 }
 
 /* Background */
 
-.container{
-    width: 100%;
-    height: 1500px;
+.container2 {
+	width: auto;
+	height: 1680px;
+	object-fit: cover;
 }
 
-.box{
-    display: flex;
-    position: relative;
-    height: 600px;
-    padding: 50px; 
+.box {
+	display: flex;
+	position: relative;
+	height: 600px;
+	padding: 50px;
+	margin: auto;
 }
 
-.box-img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: auto;
-    z-index: 1;
+.box-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	justify-content: center;
 }
 
-.divisoria{
-    text-align: center;
-    width: 100%;
+.divisoria {
+	text-align: center;
+	width: 100%;
 }
 
 /* Effect Zoe */
@@ -52,17 +55,18 @@ figure.effect-zoe figcaption {
 	bottom: 0;
 	padding: 1em;
 	height: 3.75em;
-	background: rgb(0,0,0,0.5); /*muda a cor do fundo em historias*/
+	background: rgb(0, 0, 0, 0.5);
+	/*muda a cor do fundo em historias*/
 	color: #000;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
-	-webkit-transform: translate3d(0,100%,0);
-	transform: translate3d(0,100%,0);
+	-webkit-transform: translate3d(0, 100%, 0);
+	transform: translate3d(0, 100%, 0);
 }
 
 figure.effect-zoe h2 {
-    float: center;
-    padding-top: 50px;
+	float: center;
+	padding-top: 50px;
 }
 
 figure.effect-zoe:hover p.icon-links a:hover,
@@ -86,8 +90,8 @@ figure.effect-zoe h2,
 figure.effect-zoe p.icon-links a {
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
-	-webkit-transform: translate3d(0,200%,0);
-	transform: translate3d(0,200%,0);
+	-webkit-transform: translate3d(0, 200%, 0);
+	transform: translate3d(0, 200%, 0);
 }
 
 figure.effect-zoe p.icon-links a span::before {
@@ -122,8 +126,8 @@ figure.effect-zoe:hover p.description {
 figure.effect-zoe:hover figcaption,
 figure.effect-zoe:hover h2,
 figure.effect-zoe:hover p.icon-links a {
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
 }
 
 figure.effect-zoe:hover h2 {
@@ -152,32 +156,37 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 	font-weight: normal;
 	font-style: normal;
 	font-family: 'feathericons';
-	src:url('../fonts/feathericons/feathericons.eot?-8is7zf');
-	src:url('../fonts/feathericons/feathericons.eot?#iefix-8is7zf') format('embedded-opentype'),
+	src: url('../fonts/feathericons/feathericons.eot?-8is7zf');
+	src: url('../fonts/feathericons/feathericons.eot?#iefix-8is7zf') format('embedded-opentype'),
 		url('../fonts/feathericons/feathericons.woff?-8is7zf') format('woff'),
 		url('../fonts/feathericons/feathericons.ttf?-8is7zf') format('truetype'),
 		url('../fonts/feathericons/feathericons.svg?-8is7zf#feathericons') format('svg');
 }
 
 .grid {
-	position: relative;
-	margin: 0 auto;
+	display: grid;
+	position: static;
+	margin: auto;
 	padding: 1em 0 4em;
 	max-width: 1535px;
 	list-style: none;
-    text-align: center;
+	text-align: center;
+	justify-content: space-between;
+	grid-template-columns: 30rem 30rem 30rem;
+
 }
 
 .grid figure {
 	position: relative;
 	float: left;
 	overflow: hidden;
-	margin: 10px 1%;
+	margin: 16px 1%;
 	min-width: 320px;
 	max-width: 480px;
 	max-height: 360px;
-	width: 48%;
-	background: #3085a3; /* leve mudança na cor do fundo da historia */
+	width: 64rem;
+	background: #3085a3;
+	/* leve mudança na cor do fundo da historia */
 	text-align: center;
 	cursor: pointer;
 }
@@ -205,7 +214,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 }
 
 .grid figure figcaption,
-.grid figure figcaption > a {
+.grid figure figcaption>a {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -215,7 +224,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 
 /* Anchor will cover the whole item by default */
 /* For some effects it will show as a button */
-.grid figure figcaption > a {
+.grid figure figcaption>a {
 	z-index: 1000;
 	text-indent: 200%;
 	white-space: nowrap;
@@ -224,7 +233,8 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 }
 
 .grid figure h2 {
-	word-spacing: 0.10em; /* Separação das letras */
+	word-spacing: 0.10em;
+	/* Separação das letras */
 	font-weight: 300;
 }
 
@@ -240,4 +250,33 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 .grid figure p {
 	letter-spacing: 1px;
 	font-size: 68.5%;
+}
+
+@media (max-width: 1680px) {
+	.grid{
+		grid-template-columns: 30rem 30rem;
+		justify-content: space-evenly;
+	}	
+
+	.container2{
+		height: 160rem;
+	}
+
+}
+
+@media (max-width: 980px) {
+	.grid figure {
+		margin: 1rem 1.7rem;
+		max-width: 90%;
+	}
+
+	.grid{
+		grid-template-columns: 30rem;
+		justify-content: center;
+	}
+
+	.container2{
+		height: 270rem;
+	}
+
 }
