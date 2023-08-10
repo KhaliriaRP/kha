@@ -1,23 +1,22 @@
 /* Video do Topo */
 
-.video {
-	width: 100%;
-	height: 60rem;
-	overflow: hidden;
-	justify-content: center;
-	align-items: center;
+.video{
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
 
-.video video {
-	position: fixed;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 60rem;
-	object-fit: cover;
+.video video{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 60vh;
+    object-fit: fill;
 }
 
-/* Background */
+/* Main */
 
 .container2 {
 	width: 100%;
@@ -47,6 +46,8 @@
 	width: 100%;
 }
 
+/* Cards */
+
 .flip-card{
 	text-align: center;
 }
@@ -55,8 +56,6 @@
 	width: 400px;
 	height: 500px;
 }
-
-/* Profissoes */
 
 .flip-card-back ul h2 {
 	color: white;

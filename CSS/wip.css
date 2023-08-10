@@ -1,6 +1,6 @@
 /* Video do Topo */
 
-.video {
+.video{
     width: 100%;
     height: 60vh;
     overflow: hidden;
@@ -8,7 +8,7 @@
     align-items: center;
 }
 
-.video video {
+.video video{
     left: 0;
     top: 0;
     width: 100%;
@@ -18,19 +18,19 @@
 
 /* Background */
 
-.container2 {
+.container2{
     width: 100%;
     height: 600px;
 }
 
-.box {
+.box{
     display: flex;
     position: relative;
     height: 600px;
-    padding: 50px;
+    padding: 50px; 
 }
 
-.box-img {
+.box-img{
     position: absolute;
     top: 0;
     left: 0;
@@ -40,19 +40,19 @@
     z-index: 1;
 }
 
-.divisoria {
+.divisoria{
     text-align: center;
     width: 100%;
 }
 
 /* Regras */
 
-.regras {
+.regras{
     padding: 70px 70px;
     margin: 0 50px;
 }
 
-.conteudoregras {
+.conteudoregras{
     max-width: 1500px;
     width: 98%;
     color: white;

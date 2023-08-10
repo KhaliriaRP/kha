@@ -23,25 +23,6 @@ h3 {
     text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
 }
 
-.title{
-    color: #fff;
-    position: relative;
-    top: 32rem;
-    text-align: center;
-}
-
-.title2{
-    color: #fff;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 39rem;
-    height: 100px;
-}
-
 /* Corpo */
 
 * {
@@ -128,49 +109,21 @@ header .logo {
 
 /* Banner */
 
-.banner1 {
-    width: 100%;
-    height: 100%;
-    margin-right: -50px;
-    min-height: 400px;
-    background-image: url('../img/Banner1.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.banner2 {
-    width: 100%;
-    height: 1000px;
-    margin-right: -50px;
-    min-height: 400px;
-    background-image: url('../img/Banner1.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .content {
     text-align: center;
     margin-top: -200px;
 }
 
-.banner img {
-    margin-top: 150px;
-    max-width: 350px;
-    width: 98%;
-    height: 98%;
-}
-
 /* Main */
 
 .main {
+    width: 100%;
+    height: 100%;
     background-image: url(../img/back1.png);
     background-size: cover;
     background-repeat: no-repeat;
-    position: absolute;
-    top: 600px;
-    width: 100%;
-    height: auto;
-    margin-bottom: 10rem;
+    margin-right: -50px;
+    min-height: 350px;
 }
 
 /* Rodape */
