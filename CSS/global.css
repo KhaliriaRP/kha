@@ -122,8 +122,11 @@ header .logo {
     background-image: url(../img/back1.png);
     background-size: cover;
     background-repeat: no-repeat;
-    margin-right: -50px;
     min-height: 350px;
+}
+
+.main::after{
+    opacity: 1;
 }
 
 /* Rodape */

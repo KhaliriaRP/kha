@@ -13,14 +13,14 @@
     top: 0;
     width: 100%;
     height: 60vh;
-    object-fit: fill;
+    object-fit: cover;
 }
 
 /* Main */
 
 .container2 {
 	width: 100%;
-	height: 80rem;
+	height: 120rem;
 }
 
 .box {
@@ -138,7 +138,7 @@
 	}
 
 	.container2{
-		height: 120rem;
+		height: 160rem;
 	}
 }
 
@@ -148,7 +148,7 @@
 	}
 	
 	.container2{
-		height: 230rem;
+		height: 270rem;
 	}
 
 	.flip-card-front img {
