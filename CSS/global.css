@@ -1,6 +1,8 @@
 /* Texto */
 
 @import url('https://fonts.googleapis.com/css2?family=Aladin&family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 h1 {
     font-family: 'Courgette', cursive;
@@ -125,7 +127,7 @@ header .logo {
     min-height: 350px;
 }
 
-.main::after{
+.main::after {
     opacity: 1;
 }
 
@@ -215,6 +217,21 @@ header .logo {
     transform: rotate(-45deg) scaleX(1.25);
 }
 
+.voltar {
+    text-decoration: none;
+    color: #fff;
+    width: 10rem;
+    height: 1rem;
+    font-size: 3rem;
+    margin-left: 20rem;
+    font-family: 'Aladin', cursive;
+    transition: .5s;
+}
+
+.voltar:hover {
+    color: #a329e9;
+}
+
 @media (max-width: 980px) {
     .menu-lines {
         display: block;
@@ -236,18 +253,18 @@ header .logo {
         display: block;
     }
 
-    .title2{
+    .title2 {
         font-size: 36px;
         width: 23rem;
     }
 
-    .footer a svg{
+    .footer a svg {
         width: 24px;
         height: 24px;
     }
 
-    .footer{
-        margin-top: 1rem ;
+    .footer {
+        margin-top: 1rem;
     }
 }
 

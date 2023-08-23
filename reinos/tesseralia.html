@@ -4,16 +4,16 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="shortcut icon" href="img/nav.png" />
-  <title>Khal'iria</title>
+  <link rel="shortcut icon" href="../img/nav.png" />
+  <title>Duramor</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="CSS/global.css">
-  <link rel="stylesheet" href="CSS/racas.css">
+  <link rel="stylesheet" href="../CSS/global.css">
+  <link rel="stylesheet" href="../CSS/duramor.css">
 </head>
 
 <body>
   <header class="sticky">
-    <a class="logo" href="index.html"></a>
+    <a class="logo" href="../index.html"></a>
 
     <input type="checkbox" class="menu-faketrigger" />
 
@@ -24,27 +24,27 @@
     </div>
     <div class="container">
       <li>
-        <a href="historias.html">
+        <a href="../historias.html">
           <h2>Histórias</h2>
         </a>
       </li>
       <li>
-        <a href="racas.html">
+        <a href="../racas.html">
           <h2>Raças</h2>
         </a>
       </li>
       <li>
-        <a href="reinos.html">
+        <a href="../reinos.html">
           <h2>Reinos</h2>
         </a>
       </li>
       <li>
-        <a href="wip.html">
+        <a href="../wip.html">
           <h2>Classes</h2>
         </a>
       </li>
       <li>
-        <a href="profissoes.html">
+        <a href="../profissoes.html">
           <h2>Profissões</h2>
         </a>
       </li>
@@ -59,9 +59,10 @@
   </header>
 
   <div class="video">
-    <video src="img/vid2.mp4" autoplay muted loop></video>
+    <video src="../img/vid2.mp4" autoplay muted loop></video>
     <div class="content">
-      <h1>Raças</h1>
+
+      <h1>Duramor</h1>
     </div>
   </div>
 
@@ -73,72 +74,22 @@
             <hr color="027fb3" size="4">
           </div>
 
-          <div class="classes-container">
-            <div class="card-classe">
-              <a href="#">
-                <img src="img-racas/gzmos.png" alt="foto clerigo">
-                <span class="classe-nome"> Gzmos </span>
-              </a>
+          <div class="duramor-container">
+            <a href="../reinos.html" class="voltar">Voltar</a>
+            <div class="duramor">
+
+              <img src="../img-reinos/tesseralia.png" alt="">
+              <div class="textos">
+                <h1>“A Terra das Mentiras e das Verdades”</h1>
+                <p>Muitos se perguntam ou apostam por quanto tempo essa terra continuará prospera ou com vida, mas
+                  muitos já perceberam que isso pode nunca vir a acontecer. Tessarália se formou a partir da junção de
+                  duas raças em que qualquer outra ficaria com um pé atrás de confiar e talvez por isso elas acabaram se
+                  dando tão bem, seja por acordos baseados em mentiras ou promessas falsas, os Humanos e os Insidaeres
+                  após anos de desavenças se aliaram em termos pacíficos e prósperos que já vem perdurando há muito
+                  tempo</p>
+              </div>
             </div>
 
-            <div class="card-classe">
-              <a href="#">
-                <img src="img-racas/humano.png" alt="foto clerigo">
-                <span class="classe-nome"> Humanos </span>
-              </a>
-            </div>
-
-            <div class="card-classe">
-              <a href="#">
-                <img src="img-racas/insidiae.png" alt="foto clerigo">
-                <span class="classe-nome"> Insidiaes </span>
-              </a>
-            </div>
-
-            <div class="card-classe">
-              <a href="#">
-                <img src="img-racas/kravok.png" alt="foto clerigo">
-                <span class="classe-nome"> Kravok </span>
-              </a>
-            </div>
-
-            <div class="card-classe">
-              <a href="#">
-                <img src="img-racas/Skarliaard.png" alt="foto clerigo">
-                <span class="classe-nome"> Skarliaard </span>
-              </a>
-            </div>
-
-            <div class="card-classe">
-              <a href="#">
-                <img src="img-racas/Thesir.png" alt="foto clerigo">
-                <span class="classe-nome"> Thesir </span>
-              </a>
-            </div>
-
-            <div class="card-classe">
-              <a href="#">
-                <img src="img-racas/vaelis.png" alt="foto clerigo">
-                <span class="classe-nome"> Vaelis </span>
-              </a>
-            </div>
-
-            <div class="card-classe">
-              <a href="#">
-                <img src="img-racas/vienis.png" alt="foto clerigo">
-                <span class="classe-nome"> Vienis </span>
-              </a>
-            </div>
-
-            <div class="card-classe">
-              <a href="#">
-                <img class="mySlides" src="img-racas/faeryans-cobra.png">
-                <img class="mySlides" src="img-racas/faeryans-coelho.png">
-                <img class="mySlides" src="img-racas/faeryans-gato.png">
-                <img class="mySlides" src="img-racas/faeryans-lobo.png">
-                <span class="classe-nome"> Faeryans </span>
-              </a>
-            </div>
           </div>
 
           <!-- Footer  -->
@@ -191,22 +142,6 @@
       </div>
     </div>
   </main>
-  <script>
-    var myIndex = 0;
-    carousel();
-
-    function carousel() {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      myIndex++;
-      if (myIndex > x.length) { myIndex = 1 }
-      x[myIndex - 1].style.display = "block";
-      setTimeout(carousel, 2000)
-    }
-  </script>
 </body>
 
 </html>
