@@ -149,8 +149,8 @@ header .logo {
 
 .footer a {
     color: #ffffff;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
     font-size: 2.8rem;
     transition: 0.4s;
     text-decoration: none;

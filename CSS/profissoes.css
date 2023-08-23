@@ -148,16 +148,16 @@
 	}
 	
 	.container2{
-		height: 270rem;
+		height: 260rem;
 	}
 
 	.flip-card-front img {
-		width: 360px;
-		height: 480px;
+		width: 18rem;
+		height: 28rem;
 	}
 
 	.flip-card{
-		width: 360px;
-		height: 480px;
+		width: 18rem;
+		height: 28rem;
 	}
 }
