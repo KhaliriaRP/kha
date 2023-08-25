@@ -63,13 +63,11 @@
 }
 
 @media (max-width: 1280px) {
-  .main {
-    height: 175rem;
-    width: auto;
-  }
 
   .in-classe-container {
     width: 24rem;
+    display: flex;
+    justify-content: center;
   }
 
   .in-classe-container img {
@@ -79,11 +77,13 @@
 
   .in-class-card {
     display: inline;
+
     text-align: center;
   }
 
   .textos-container {
-    width: 22rem;
+    width: 20rem;
+    margin: auto 0 auto 0;
   }
 
   .btn-voltar {
