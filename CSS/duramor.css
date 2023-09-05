@@ -91,15 +91,15 @@
 
 @media (max-width: 1280px) {
   .main {
-    height: 75rem;
+    height: 70rem;
   }
 
   .voltar{
-    margin-left: 22rem;
+    margin-left: 12rem;
   }
 
   .duramor{
-    width: 28rem;
+    width: 18rem;
     margin: auto;
     display: block;
     text-align: center;
@@ -107,7 +107,7 @@
   }
 
   .duramor img{
-    height: 25rem;
+    height: 18rem;
     margin: auto;
   }
 
@@ -120,6 +120,6 @@
   }
 
   .textos p{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
