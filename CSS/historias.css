@@ -1,26 +1,26 @@
 /* Video do Topo */
 
 .video {
-    width: 100%;
-    height: 60vh;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
+	width: 100%;
+	height: 60vh;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
 }
 
 .video video {
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 60vh;
-    object-fit: cover;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 60vh;
+	object-fit: cover;
 }
 
 /* Background */
 
 .container2 {
 	width: 100%;
-	height: 110rem;
+	height: 170rem;
 }
 
 .box {
@@ -179,9 +179,9 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 	float: left;
 	overflow: hidden;
 	margin: 16px 1%;
-	min-width: 320px;
+	min-width: 480px;
 	max-width: 480px;
-	max-height: 360px;
+	max-height: 480px;
 	width: 64rem;
 	background: #3085a3;
 	/* leve mudança na cor do fundo da historia */
@@ -195,6 +195,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 	min-height: 100%;
 	max-width: 100%;
 	opacity: 0.8;
+	background-position: center;
 }
 
 .grid figure figcaption {
@@ -273,7 +274,13 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 	}
 
 	.container2 {
-		height: 207rem;
+		height: 340rem;
+	}
+
+	.grid figure {
+		min-width: 20rem;
+		max-width: 20rem;
+		max-height: 20rem;
 	}
 
 }
